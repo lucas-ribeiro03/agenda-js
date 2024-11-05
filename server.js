@@ -45,6 +45,12 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 
+app.use((req, res, next) => {
+  res.setHeader("Content-Security-Policy", "script-src 'self' https://cdn.jsdelivr.net;");
+  next();
+});
+
+
 //Configurações da sessão
 const sessionOptions = session({
   secret: 'fwefwef',

@@ -14,13 +14,13 @@
       <div class="row">
         <div class="col-lg">
           <h4>Faça seu cadastro</h4>
-          <form action="/login/register" method="POST">
+          <form class="form-cadastro" action="/login/register" method="POST">
             <input type="hidden" name="_csrf" value=<%= csrfToken %>>
             <div class="form-group">
-              <label for="exampleInputEmail1" class="form-label">Seu email</label>
+              <label class="form-label">Seu email</label>
               <input type="email" class="form-control" name="email" style="width: 45%;">
             <div class="form-group">
-              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <label= class="form-label">Senha</label>
               <input type="password" class="form-control" name="senha" style="width: 45%;">
             <button type="submit" class="btn btn-primary my-3">Cadastrar</button>
           </form>
@@ -29,13 +29,13 @@
 
         <div class="col-lg">
           <h4>Fazer login</h4>
-          <form action="/login/login" method="POST">
+          <form class="form-login" action="/login/login" method="POST">
             <input type="hidden" name="_csrf" value=<%= csrfToken %>>
             <div class="form-group">
-              <label for="exampleInputEmail1" class="form-label">Seu email</label>
+              <label class="form-label">Seu email</label>
               <input type="email" class="form-control" name="email" style="width: 45%;">
             <div class="form-group">
-              <label for="exampleInputPassword1" class="form-label">Senha</label>
+              <label class="form-label">Senha</label>
               <input type="password" class="form-control" name="senha" style="width: 45%;">
             <button type="submit" class="btn btn-primary my-3">Fazer Login</button>
           </form>
